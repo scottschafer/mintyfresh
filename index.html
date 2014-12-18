@@ -1,0 +1,83 @@
+<!doctype html>
+<html ng-app="app">
+
+  <head>
+
+    <!-- Index 2 !!!! -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="libs/bootstrap-3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="libs/angular-ui-grid-v3.0.0/ui-grid.min.css" />
+    <link rel="stylesheet" type="text/css" href="libs/jquery-ui-1.11.2/jquery-ui.css" />
+    <link href="css/mintyFresh.css" rel="stylesheet">
+
+    <!-- 3rd party libraries -->
+
+    <!-- Correct CDN includes, but slower for local dev: 
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular-route.min.js"></script>
+
+    -->
+
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/jquery-ui-1.11.2/jquery-ui.min.js"></script>
+
+    <script src="libs/angular-1.3.6/angular.js"></script>
+    <script src="libs/angular-1.3.6/angular-route.js"></script>
+    <script src="libs/angular-1.3.6/angular-touch.js"></script>
+
+    <script src="libs/angular-ui-grid-v3.0.0/ui-grid.min.js"></script>
+    <script src="libs/ui-bootstrap-tpls-0.6.0.js"></script>
+    <script src="libs/angular-dragdrop.min.js"></script>
+
+    <!-- app -->
+    <script src="js/app.js"></script>
+
+    <!-- services -->
+    <script src="js/services/LocalStorageService.js"></script>
+    <script src="js/services/FilteredTransactionsService.js"></script>
+    
+    <!-- models -->
+    <script src="js/models/TransactionsModel.js"></script>
+    <script src="js/models/CategoryRemappingModel.js"></script>
+    <script src="js/models/BudgetsModel.js"></script>
+    <!-- script src="js/models/RemappedTransactionsModel.js"></script -->
+
+    <!-- controllers -->
+    <script src="js/controllers/SpendingController.js"></script>
+    <script src="js/controllers/TransactionsController.js"></script>
+    <script src="js/controllers/CategoriesController.js"></script>
+    <script src="js/controllers/BudgetsController.js"></script>
+    <script src="js/controllers/ImportController.js"></script>
+
+  </head>
+
+<body>
+<!-- HEADER AND NAVBAR -->
+    <header>
+        <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">MintyFresh Budgeting Tool</a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#/">Home</a></li>
+                <li><a href="#spending">Spending</a></li>
+                <li><a href="#transactions">Transactions</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#budgets">Budgets</a></li>
+                <li><a href="#import">Import</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+
+  <div id="main">  
+    <!-- angular templating -->
+    <!-- this is where content will be injected -->
+    <div ng-view></div>
+  </div>
+
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<div class="jumbotron text-center">
+	<h1>Upload</h1>
+
+	<div>
+		<label for="fileToUpload">Select a CSV file of transactions exported from Mint:</label><br><br>
+        <label>
+            <input id="fileToUpload" type="file" accept=".csv" ng-model-instant onchange="angular.element(this).scope().onUpload(this)" />
+        </label>
+
+        <br><br>
+        <button data-ng-click="onGenerateRandomData()">Or click to generate random data</button>
+        <br><br>
+        <a href="https://wwws.mint.com/transactionDownload.event?queryNew=&amp;offset=0&amp;filterType=cash&amp;comparableType=8">If you are logged into mint, click here to download your transactions.</a>
+    </div>
+</div>

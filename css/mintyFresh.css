@@ -1,0 +1,120 @@
+#main {
+	padding: 4px;
+}
+
+.gridStyle {
+    border: 1px solid rgb(212,212,212);
+    width: 100% !important;
+    height: 100%;
+}
+
+
+tabset, tab, div.mainTabs {
+	height:100%;      
+}
+      
+.tab-pane, .tab-content {
+	height:90vh;
+}
+
+.spending {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	height:60%;
+	overflow: scroll;
+}
+
+.spendingColumn {
+	width: 20%;
+	height: 100%;
+}
+
+.categoryInBudget {
+	display: block;
+}
+
+.budgetHeader, .budgetCategory {
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    border: white;
+    border-style: solid;
+    border-width: 4px;
+    margin: 0px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.budgetLabel {
+	font-size: 12px;
+	display: inline-block;
+	width: 60px;
+}
+
+.budgetInput {
+	width: 120px;
+	font-size: 12px;
+	margin-bottom: 4px;
+}
+
+label.small {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.budgetHeader {
+	background-color: #a0a0ff;
+}
+
+.budgetCategory {
+	background-color: #d0d0ff;
+}
+
+.budgetCategories {
+	background-color: #d0d0ff;
+	min-height: 500px;
+	margin-top: 4px;
+	border: 1px solid black;
+}
+
+.budgetHeader.selected {
+    border: red;
+    border-style: solid;
+    border-width: 4px;
+}
+
+.budgetCategory.selected {
+    border: red;
+    border-style: solid;
+    border-width: 4px;
+}
+
+select {
+	font-size: 200%;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 150%;
+	margin:2px;
+}
+
+h2 {
+	font-size: 100%;
+	margin:2px;
+}
+
+h3 {
+	font-size: 100%;
+	margin:2px;
+}
+
+td {
+	padding: 2px;
+	vertical-align: top;
+}
